@@ -1,0 +1,29 @@
+<div class="panel">
+	<div class="controls">
+		<label>Scale:
+			<select id="scale">
+				<option value="1">1×</option>
+				<option value="2">2×</option>
+				<option value="3">3×</option>
+				<option value="4" selected>4×</option>
+				<option value="6">6×</option>
+				<option value="8">8×</option>
+			</select>
+		</label>
+
+		<label><input type="checkbox" id="invert">Invert</label>
+		<label><input type="checkbox" id="grid">Show grid</label>
+		<label><input type="text" id="file-name">Name</label>
+
+		<button id="refresh">Refresh</button>
+		<button id="download-png">Download PNG</button>
+		<button id="download-bin">Download BIN</button>
+	</div>
+
+	<p>Inserisci i valori esadecimali separati da spazi o virgole:</p>
+	<textarea id="hexInput">0x00 0xFF, 0x0F</textarea>
+</div>
+
+<div style="display:flex; gap:16px; align-items:flex-start">
+	<canvas id="oledCanvas" width="128" height="64"></canvas>
+</div>
